@@ -5,8 +5,6 @@ const path = require('path');
 
 app.use(express.static('public'));
 
-app.use(express.urlencoded());
-
 app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo en el puerto 3000");
 });
