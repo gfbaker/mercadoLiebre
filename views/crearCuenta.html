@@ -65,19 +65,19 @@ rel="stylesheet" />
             <form action="/crearCuenta" method="POST" class="formulario">
                     <div class="div-formulario">
                         <label>Nombre y apellido:</label>
-                        <input type="text" name="nombreApellido" value="" placeholder="Ej. Guillermo Baker" minlength="4" class="estilo-form">
+                        <input type="text" name="nombreApellido" value="" placeholder="Ej. Guillermo Baker" minlength="4" required="required" class="estilo-form">
                     </div>
                     <div class="div-formulario">
                         <label>Nombre de usuari@:</label>
-                        <input type="text" name="nombreUsuario" value="" placeholder="gbaker" minlength="4" class="estilo-form">
+                        <input type="text" name="nombreUsuario" value="" placeholder="gbaker" minlength="4" required="required" class="estilo-form">
                     </div>
                     <div class="div-formulario">
                         <label>Fecha de nacimiento:</label>
-                        <input type="date" name="nacimiento" value="" class="estilo-form">
+                        <input type="date" name="nacimiento" value="" required="required" class="estilo-form">
                     </div>
                     <div class="div-formulario">
                         <label>Domicilio:</label>
-                        <input type="text" name="domicilio" value="" minlength="6" class="estilo-form">
+                        <input type="text" name="domicilio" required="required" value="" minlength="6" class="estilo-form">
                     </div>
                     <div class="div-formulario">
                         <label>Elija su perfil de usuario:</label>
@@ -96,15 +96,15 @@ rel="stylesheet" />
                     </div>      
                     <div class="div-formulario">
                         <label>Seleccione su foto de usuari@:</label>
-                        <input type="file" name="fotoPerfil" value="" class="estilo-form"> 
+                        <input type="file" name="fotoPerfil" required="required" value="" class="estilo-form"> 
                     </div>
                     <div class="div-formulario">
                         <label>Contraseña:</label>
-                        <input type="password" name="password" value="" minlength="8" class="estilo-form">
+                        <input type="password" name="password" required="required" value="" minlength="8" class="estilo-form">
                     </div>
                     <div class="div-formulario">
                         <label>Confirmar contraseña:</label>
-                        <input type="password2" name="password2" value="" minlength="8" class="estilo-form">  
+                        <input type="password2" name="password2" required="required" value="" minlength="8" class="estilo-form">  
                     </div>
                     <div class="div-formulario">
                         <button type="submit" name="enviar" value="enviar" class="button-form">Enviar</button>
